@@ -29,6 +29,8 @@ cache/
 *.log
 *.toc
 *.vrb
+*.aux
+*.out
 *-concordance.tex
 *.synctex.gz
 
