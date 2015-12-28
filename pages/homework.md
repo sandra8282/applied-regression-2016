@@ -8,6 +8,18 @@ Homework assignments will be posted here, in general organized by due date. Unle
 
 **Collaboration on homework is expected and encouraged, although you must write up your own assignment. No copying or cutting and pasting.**
 
+_Due Tuesday 1/26/2016_
+
+* Read ISL Chapters 1 and 3.1.
+* Read Faraway Chapters 1 and 2.
+* Read through the syllabus.
+* (5 points for completing the test) Take [CAOS test](https://apps3.cehd.umn.edu/artist/user/scale_select.html) (Access code provided on Piazza)
+* (10 points) Hand in Problem 8 (part c is optional) from ISL Chapter 3 as a PDF file created using RMarkdown. You may use ggplot2 functions instead of base R graphics.
+* (5 points) Create a Google Drive folder named "[LastName]-[FirstName]-690NR" (e.g. "Reich-Nick-690NR") and share it with me (nick at umass dot edu). You will use this folder to hand in homework assignments.
+* (Review) Brush up on creating data analysis reports using RMarkdown. 
+* (Review) If you don't know what ``tidy data'' is, [read about it](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html).
+
+<!--
 _Due Wednesday 4/8/2015, 5pm_ 
 
 * (30 pts) [Lab 5](../assets/labs/lab5-amelia-missing-data.pdf).
@@ -49,21 +61,10 @@ _Due Tuesday 2/3/2015, 5pm_
 * (10 points) Using R, create an example of Simpson's paradox using simulated data, where you have a continuous outcome variable, one continuous x variable, and one categorical x variable. It is not necessary to fit regression models to show the paradox, but you should use several graphics to illustrate the slopes, as was shown in the slides for class 1. You should simulate your data using probability distributions with the R functions such as `rnorm()`, `runif()`, `rpois()`, etc... Every time your .Rmd file is re-knit, you should end up with different data, but the story should be the same. 
 
 
-_Due Tuesday 1/27/2015_
-
-* Read ISL Chapters 1 and 3.1.
-* Read Faraway Chapters 1 and 2.
-* Read through the syllabus.
-* (5 points for completing the test) Take [CAOS test](https://apps3.cehd.umn.edu/artist/user/scale_select.html) (Access code provided on Piazza)
-* (10 points) Hand in Problem 8 (part c is optional) from ISL Chapter 3 as a PDF file created using RMarkdown. You may use ggplot2 functions instead of base R graphics.
-* (5 points) Create a Google Drive folder named "[LastName]-[FirstName]-690NR" (e.g. "Reich-Nick-690NR") and share it with me (nick at umass dot edu). You will use this folder to hand in homework assignments.
-* (Review) Brush up on creating data analysis reports using RMarkdown. 
-* (Review) If you don't know what ``tidy data'' is, [read about it](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html).
 
 
-<!--
 
-
+FROM 2014 COURSE
 
 #### Class 1 (Jan 21): Course Introduction 
 
