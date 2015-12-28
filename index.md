@@ -53,4 +53,4 @@ The aim of this course is to provide fundamental statistical concepts and tools 
 
 ---
 
-The [source for the website]({{ BASE_PATH }}/tree/gh-pages) 
+The [source for the website](https://github.com/nickreich/applied-regression-2016) 
