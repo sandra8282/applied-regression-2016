@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Statistical Modeling and Data Visualization
+title: Applied Regression Modeling
 tagline: 
 ---
 
@@ -15,18 +15,18 @@ The aim of this course is to provide fundamental statistical concepts and tools 
 
 #### Course Details
 
-**Course number**: PUBHLTH 690NR 
+**Course number**: BIOSTATS 690NR 
 
-**Instructor**: [Nicholas Reich](http://people.umass.edu/nick)
+**Instructor**: [Nicholas Reich](http://reichlab.github.io)
 
-**Office hours**: Wed 9:30-10:30 or by appointment
+**Office hours**: TBD
 
 **Prerequisites**: <br> 
 &nbsp; &nbsp; A first course in statistics or biostatistics.<br>
 &nbsp; &nbsp; Familiarity with the [R statistical programming language](http://www.r-project.org). <br>
 &nbsp; &nbsp; Working knowledge of basic matrix methods and calculus (optional, but recommended).
 
-**Lectures**: Tu/Th, 11:15am&ndash;12:30pm, LGRC 204
+**Lectures**: Tu/Th, 11:15am&ndash;12:30pm, LGRC 147
 
 **Required books** (all freely available online) <br>
 &nbsp; &nbsp; Faraway JJ. 2002. [Practical Regression and Anova using R](http://cran.r-project.org/doc/contrib/Faraway-PRA.pdf). <br>
@@ -53,4 +53,4 @@ The aim of this course is to provide fundamental statistical concepts and tools 
 
 ---
 
-The [source for the website](https://github.com/nickreich/stat-modeling-2015/tree/gh-pages) 
+The [source for the website]({{ BASE_PATH }}/tree/gh-pages) 
