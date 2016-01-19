@@ -6,7 +6,7 @@ tagline:
 
 _Tuesday, week 1_
 
- - Welcome, introductions, syllabus hand-out, review course website and course goals (15 min)
+ - Welcome, introductions, review course website and course goals (15 min)
  - Lecture: Intro to regression (30-40 min)
  - Wits and Wagers (15 min)
 

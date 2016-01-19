@@ -294,7 +294,7 @@ Good overview \href{http://en.wikipedia.org/wiki/Regression_analysis}{on Wikiped
  
  
 <<showHeights, message=FALSE>>=
-require(alr3)
+library(alr3)
 data(heights)
 head(heights)
 @
@@ -304,7 +304,7 @@ head(heights)
 \begin{frame}[fragile]{Example data: heights of mothers and daughters}
  
 <<plotHeights1, message=FALSE, fig.height=4, tidy=FALSE>>=
-require(ggplot2)
+library(ggplot2)
 qplot(Mheight, Dheight, data=heights, col="red", 
       alpha=.5) + theme(legend.position="none")
 @
@@ -345,7 +345,7 @@ Given some data $y, x_1, x_2, \ldots x_p$, we are interesting finding a likely v
 \begin{frame}[fragile]{Example data: heights of mothers and daughters}
  
 <<plotHeights, message=FALSE, fig.height=5, tidy=FALSE, echo=FALSE>>=
-require(ggplot2)
+library(ggplot2)
 qplot(Mheight, Dheight, data=heights, col="red", 
       alpha=.5) + theme(legend.position="none")
 @
