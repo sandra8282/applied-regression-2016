@@ -13,13 +13,14 @@ _Due Tuesday 1/26/2016_
 * Read ISL Chapters 1 and 3.1.
 * Read Faraway Chapters 1 and 2.
 * Read through the syllabus.
-* (5 points for completing the test) Take [CAOS test](https://apps3.cehd.umn.edu/artist/user/scale_select.html) (Access code provided on Piazza)
-* (10 points) Hand in Problem 8 (part c is optional) from ISL Chapter 3 as a PDF file created using RMarkdown. You may use ggplot2 functions instead of base R graphics.
 * (5 points) Create a Google Drive folder named "[LastName]-[FirstName]-690NR" (e.g. "Reich-Nick-690NR") and share it with me (nick at umass dot edu). You will use this folder to hand in homework assignments.
+* (10 points) Hand in Problem 8 (part c is optional) from ISL Chapter 3 as a PDF file created using RMarkdown. You may use ggplot2 functions instead of base R graphics. This assignment should be submitted electronically by placing the file in your Google Drive folder created above.
 * (Review) Brush up on creating data analysis reports using RMarkdown. 
 * (Review) If you don't know what ``tidy data'' is, [read about it](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html).
 
 <!--
+* (5 points for completing the test) Take [CAOS test](https://apps3.cehd.umn.edu/artist/user/scale_select.html) (Access code provided on Piazza)
+
 _Due Wednesday 4/8/2015, 5pm_ 
 
 * (30 pts) [Lab 5](../assets/labs/lab5-amelia-missing-data.pdf).
