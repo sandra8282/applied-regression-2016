@@ -19,7 +19,9 @@ The aim of this course is to provide fundamental statistical concepts and tools 
 
 **Instructor**: [Nicholas Reich](http://reichlab.github.io)
 
-**Office hours**: TBD
+**TA**: Chu-Yuan Luo
+
+**Office hours**: Wednesday 11:30-12:30 (instructor), or Monday 2-4pm (TA)
 
 **Prerequisites**: <br> 
 &nbsp; &nbsp; A first course in statistics or biostatistics.<br>
