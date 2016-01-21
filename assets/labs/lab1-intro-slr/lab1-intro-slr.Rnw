@@ -182,6 +182,10 @@ Based on the plot in (1), does the constant variability condition appear to be m
 
 \item Check the model diagnostics for the regression model with the variable you decided was the best predictor for CO content.
 
+\item Derive the formulas for $\beta_0$ and $\beta_1$. Show your work.
+
+\item Write your own R function that takes as input $y$ and $x$ vectors of data and outputs estimates of $\beta_0$ and $\beta_1$ using the direct calculation from the formulas you derived in the last step. Choose one of the simple linear regression models that you ran in this lab. Compare the output from your function to the outputs from a call to  \hlkwd{lm()}. In your write-up, be sure to show the code that defines your function.
+
 \end{enumerate}
 
 \end{document}

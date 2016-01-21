@@ -109,7 +109,7 @@ qplot(x, y, data=dat, facets=.~set, alpha=.5) + geom_smooth(method="lm", se=FALS
 	\myitem Want to use predictors to learn about the outcome distribution, particularly conditional expected value.
 	\myitem Formulate the problem parametrically
 		\beqa
-		E(y \mid x) = f(x;\beta) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots
+		\mathbb E (y \mid x) = f(x;\beta) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots
 		\eeqa
 	\myitem (Note that other useful quantities, like covariance and correlation, tell you about the joint distribution of $y$ and $x$)
 \ei
@@ -140,7 +140,7 @@ cor(x,y) & = & \frac{cov(x,y)}{\sqrt{var(x)var(y)}}
 	\myitem Linear models are a special case of all regression models; simple linear regression is the simplest place to start
 	\myitem Only one predictor:
 		\beqa
-		E(y \mid x) = f(x;\beta) = \beta_0 + \beta_1 x_1
+		\mathbb E (y \mid x) = f(x;\beta) = \beta_0 + \beta_1 x_1
 		\eeqa
 	\myitem Useful to note that $x_0 = 1$ (implicit definition)
 	\myitem Somehow, estimate $\beta_0, \beta_1$ using observed data.
