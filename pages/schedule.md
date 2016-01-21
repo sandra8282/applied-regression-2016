@@ -10,8 +10,8 @@ _ISL_ refers to the textbook _Introduction to Statistical Learning_, _PR_ refers
 
 Week |       |     | Topic   | In-class resources | Reading
 ---- | ----- | --- | ------- | ------------------ | -------
- 1   | Jan | 19, 21  | Simple Linear Regression &nbsp; | [Lecture 1](../assets/lectures/lecture1-intro-regression/lecture1-intro-regression.pdf) | _ISL_ Ch 1, 3.1; _PR_ Ch 1, 2.
- 2   |     | 26, 28  &nbsp;| Simple Linear Regression (con't) | <!--[Lecture 2](../assets/lectures/lecture2-slr-basics/lecture2-slr-basics.pdf), [Lab 1](../assets/labs/lab1-intro-slr.pdf) --> | _ISL_ Ch 3.1; _PR_ Ch 2.
+ 1   | Jan | 19, 21  | Simple Linear Regression &nbsp; | [Lec 1](../assets/lectures/lecture1-intro-regression/lecture1-intro-regression.pdf), [Lec 2](../assets/lectures/lecture2-slr-basics/lecture2-slr-basics.pdf), [Lab 1](../assets/labs/lab1-intro-slr.pdf) | _ISL_ Ch 1, 3.1; _PR_ Ch 1, 2.
+ 2   |     | 26, 28  &nbsp;| Simple Linear Regression (con't) | <!-- --> | _ISL_ Ch 3.1; _PR_ Ch 2.
  3   | Feb | 2, 4   | Least squares, multiple linear regression | <!-- [Lec 3](../assets/lectures/lecture3-slr-anova/lecture3-SLR-anova.pdf), [Lec 4](../assets/lectures/lecture4-mlr-intro/lecture4-mlr-intro.pdf), [Lab 2](../assets/labs/lab2-intro-mlr.pdf)--> | _ISL_ Ch 3.2-3.3; _PR_ Ch 2.
  4   |     | 9, 11 | MLR: estimation, model formulation | <!-- [Lec 5](../assets/lectures/lecture5-mlr-estimation-formulation/lecture5-mlr-estimation-formulation.pdf), [Lec 6](../assets/lectures/lecture6-mlr-categorical/lecture6-mlr-categorical.pdf)--> | _ISL_ Ch 3.2-3.3; _PR_ Ch 2.
  5   |     | 18     | MLR: inference, multiple testing | <!--[Lec 7](../assets/lectures/lecture7-mlr-inference/lecture7-mlr-inference.pdf), [R code](../assets/labs/sampling-distribution-simulation.R), [Lab 3](../assets/labs/lab3-mlr-inference.pdf)--> | _PR_ Ch. 3

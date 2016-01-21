@@ -13,12 +13,13 @@ _Tuesday, week 1_
 _Thursday, week 1_
 
  - course technology intro: website, piazza, Google Drive (20 min)
- - Lecture 2: SLR- least squares and geometry of regression
+ - Lecture 2: SLR- least squares and geometry of regression (40 min)
+ - lab 1: SLR, least squares estimation
  
 _Tuesday, week 2_
 
  - lecture 2: SLR - least squares and geometry of regression
- - lab 1: SLR, least squares estimation
+ - quiz 1
  
 _Thursday, week 2_ 
  
