@@ -18,6 +18,10 @@ _Due Tuesday 1/26/2016_
 * (Review) Brush up on creating data analysis reports using RMarkdown. 
 * (Review) If you don't know what ``tidy data'' is, [read about it](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html).
 
+_Due Thursday 1/28/2016_
+
+* (30 points) Hand in Lab 1 writeup as PDF file knitted using RMarkdown on Google Drive.
+
 <!--
 * (5 points for completing the test) Take [CAOS test](https://apps3.cehd.umn.edu/artist/user/scale_select.html) (Access code provided on Piazza)
 

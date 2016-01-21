@@ -61,7 +61,8 @@
 
 \begin{frame}[fragile]{Which data show a stronger association?}
 <<warmUp, echo=FALSE, message=FALSE, fig.height=5.5>>=
-require(ggplot2)
+library(ggplot2)
+theme_set(theme_bw())
 n <- 1000
 x <- runif(n)
 s1 <- 1
@@ -206,32 +207,107 @@ cor(x,y) & = & \frac{cov(x,y)}{\sqrt{var(x)var(y)}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]
+\begin{frame}[fragile]{Any violations of assumptions? (Ex. 1)}
 
-<<scatterPlots, echo=FALSE, cache=TRUE, fig.height=5.5>>=
-## plot 1
-x1 = rnorm(100)
-y1 = rnorm(100)
-
-## plot 2
-x2 <- rnorm(100)
-y2 = -2-2*x2 + rnorm(100, 0, .5)
-x2[1] <- 3; y2[1] <- .2
-
-## plot 3
-x3 <- rnorm(100)
-y3 = -2+2*(x3+1)^2 + rnorm(100, 0, 2)
-
-##plot 4
-x4 <- abs(rnorm(100, mean=2))
-y4 = -2+4*x4 + rnorm(100, 0, x4*2)
-
-## plot all at once
-dat1 <- data.frame(x=c(x1, x2, x3, x4), y=c(y1, y2, y3, y4), graph=rep(1:4, each=100))
-qplot(x, y, data=dat1) + facet_wrap(~graph, scales="free")
+<<scatterPlot1, echo=FALSE, cache=TRUE, fig.height=3.5>>=
+x1 <- rnorm(100)
+y1 = -2-2*x1 + rnorm(100, 0, .5)
+x1[1] <- 3; y1[1] <- .2
+qplot(x1, y1)
 @
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Any violations of assumptions?  (Ex. 1)}
+
+<<scatterPlot2, cache=TRUE, fig.height=3.5>>=
+x1 <- rnorm(100)
+y1 = -2-2*x1 + rnorm(100, 0, .5)
+x1[1] <- 3; y1[1] <- .2
+qplot(x1, y1)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Any violations of assumptions? (Ex. 2)}
+
+<<scatterPlot3, echo=FALSE, cache=TRUE, fig.height=3.5>>=
+x2 <- rnorm(100)
+y2 = -2+2*(x2+1)^2 + rnorm(100, 0, 2)
+qplot(x2, y2)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Any violations of assumptions?  (Ex. 2)}
+
+<<scatterPlot4, cache=TRUE, fig.height=3.5>>=
+x2 <- rnorm(100)
+y2 = -2+2*(x2+1)^2 + rnorm(100, 0, 2)
+qplot(x2, y2)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Any violations of assumptions? (Ex. 3)}
+
+<<scatterPlot5, echo=FALSE, cache=TRUE, fig.height=3.5>>=
+x3 <- abs(rnorm(100, mean=2))
+y3 = -2+4*x3 + rnorm(100, 0, x3*2)
+qplot(x3, y3)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Any violations of assumptions?  (Ex. 3)}
+
+<<scatterPlot6, cache=TRUE, fig.height=3.5>>=
+x3 <- abs(rnorm(100, mean=2))
+y3 = -2+4*x3 + rnorm(100, 0, x3*2)
+qplot(x3, y3)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Any violations of assumptions?  (Ex. 4)}
+\scriptsize
+<<flu-errors, fig.height=3.5, message=FALSE, warning=FALSE>>=
+library(cdcfluview)
+library(dplyr)
+usflu <- get_flu_data("national", "ilinet", years=2013:2015)
+usflu <- mutate(usflu, 
+                date = as.Date(paste0(YEAR, sprintf("%02d", WEEK), "00"), 
+                               format="%Y%W%w"),
+                ili_weighted = X.UNWEIGHTED.ILI)
+ggplot(usflu, aes(x=date, y=ili_weighted)) + geom_point()
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Any violations of assumptions?  (Ex. 4)}
+<<flu-errors2, fig.height=3.5>>=
+fm1 <- lm(ili_weighted~date, data=usflu)
+resid1 <- resid(fm1)
+acf(resid1)
+@
+
+\end{frame}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
