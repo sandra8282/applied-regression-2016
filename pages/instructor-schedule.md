@@ -18,10 +18,13 @@ _Thursday, week 1_
  
 _Tuesday, week 2_
 
- - lecture 2: SLR - least squares and geometry of regression
- - quiz 1
+ - lab 1 in class exercise
+ - lecture 3: SLR - least squares and geometry of regression
  
 _Thursday, week 2_ 
+
+ - quiz 1
+ 
  
  Week 3: 
  Tuesday: quiz, Lecture 3: SLR - ANOVA , WW
