@@ -22,6 +22,20 @@ _Due Thursday 1/28/2016_
 
 * (30 points) Hand in Lab 1 writeup as PDF file knitted using RMarkdown on Google Drive.
 
+_Due Tuesday 2/2/2016, 5pm_ 
+(PDF and Rmd files to be handed in via Google Drive) 
+
+* (20 points) Create a short reproducible document (using knitr) that describes the basic structure of a dataset and summarizes some key features of the data using a few key tables and figures. Choose a dataset from [these datasets](datasets.html),  the ones in the class Google Drive, or some other dataset that interests you. _Be sure to pick a dataset that has a continuous variable that you can use as an outcome variable in a linear regression model._ Your write-up should address the following points:
+  * What is the background/context for this data? 
+  * Data management: How many observations are there? Is the data tidy? What is the unit of observation? 
+  * Data validation: Is there any missing data? If so, are there patterns to the missingness? Are there any obvious outliers in the data?
+  * Choose 4 to 10 key variables from your dataset (including the outcome variable). Include a codebook-style table that lists for each chosen variable the names, definitions, type of variable (i.e. categorical, continuous, binary), and the number of missing observations. Choose at least two of these variables and provide figures that show their univariate distributions. Describe the plotted distributions in words.
+  * Run simple linear regressions with two different predictor variables. Interpret the results. Plot a scatterplot of each regression and include the fitted line on the graph. Rescale your predictor variables if necessary to obtain a meaningful interpretation of beta0.
+* (10 points) Using R, create an example of Simpson's paradox using simulated data, where you have a continuous outcome variable, one continuous x variable, and one categorical x variable. It is not necessary to fit regression models to show the paradox, but you should use several graphics to illustrate the slopes, as was shown in the slides for class 1. You should simulate your data using probability distributions with the R functions such as `rnorm()`, `runif()`, `rpois()`, etc... Every time your .Rmd file is re-knit, you should end up with different data, but the story should be the same. 
+
+
+
+
 <!--
 * (5 points for completing the test) Take [CAOS test](https://apps3.cehd.umn.edu/artist/user/scale_select.html) (Access code provided on Piazza)
 
@@ -53,17 +67,6 @@ _Due Tuesday 2/17/2015, 5pm_
 _Due Tuesday 2/10/2015, 5pm_ 
 
 * (30 points) Complete [Lab 2](../assets/labs/lab2-intro-mlr.pdf). Hand in a PDF and Rmd file via Google Drive. The final PDF file should be no more than 6 pages, including graphs.
-
-_Due Tuesday 2/3/2015, 5pm_ 
-(PDF and Rmd files to be handed in via Google Drive) 
-
-* (20 points) Create a short reproducible document (using knitr) that describes the basic structure of a dataset and summarizes some key features of the data using a few key tables and figures. Choose a dataset from [these datasets](datasets.html),  the ones in the class Google Drive, or some other dataset that interests you. Be sure to pick a dataset that has a continuous variable that you can use as an outcome variable in a linear regression model. Your write-up should address the following points:
-  * What is the background/context for this data? 
-  * Data management: How many observations are there? Is the data tidy? What is the unit of observation? 
-  * Data validation: Is there any missing data? If so, are there patterns to the missingness? Are there any obvious outliers in the data?
-  * Choose 4 to 10 key variables from your dataset (including the outcome variable). Include a codebook-style table that lists for each chosen variable the names, definitions, type of variable (i.e. categorical, continuous, binary), and the number of missing observations. Choose at least two of these variables and provide figures that show their univariate distributions. Describe the plotted distributions in words.
-  * Run simple linear regressions with two different predictor variables. Interpret the results. Plot a scatterplot of each regression and include the fitted line on the graph. Rescale your predictor variables if necessary to obtain a meaningful interpretation of beta0.
-* (10 points) Using R, create an example of Simpson's paradox using simulated data, where you have a continuous outcome variable, one continuous x variable, and one categorical x variable. It is not necessary to fit regression models to show the paradox, but you should use several graphics to illustrate the slopes, as was shown in the slides for class 1. You should simulate your data using probability distributions with the R functions such as `rnorm()`, `runif()`, `rpois()`, etc... Every time your .Rmd file is re-knit, you should end up with different data, but the story should be the same. 
 
 
 
