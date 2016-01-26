@@ -11,12 +11,11 @@ The source code and PDF files associated with the lectures will be posted below 
 \[S=Slides \| A=Annotated Slides \]
 
 * Lecture 1: Introduction to Regression  \[  [S](../assets/lectures/lecture1-intro-regression/lecture1-intro-regression.pdf) \]
- 
- * Lecture 2: Simple Linear Regression and Least Squares \[  [S](../assets/lectures/lecture2-slr-basics/lecture2-slr-basics.pdf) \]
+* Lecture 2: Simple Linear Regression and Least Squares \[  [S](../assets/lectures/lecture2-slr-basics/lecture2-slr-basics.pdf) \]
+* Lecture 3: Simple Linear Regression and ANOVA \[ [S](../assets/lectures/lecture3-slr-anova/lecture3-SLR-anova.pdf) \| 
+<!--  [A](../assets/lectures/lecture3-slr-anova/lecture3-SLR-anova-annotated.pdf) --> \]
 
 <!--
-* Lecture 2: Simple Linear Regression and Least Squares \[  [S](../assets/lectures/lecture2-slr-basics/lecture2-slr-basics.pdf) \| [A](../assets/lectures/lecture2-slr-basics/lecture2-slr-basics-annotated.pdf)  \]
-* Lecture 3: Simple Linear Regression and ANOVA \[ [S](../assets/lectures/lecture3-slr-anova/lecture3-SLR-anova.pdf) \|  [A](../assets/lectures/lecture3-slr-anova/lecture3-SLR-anova-annotated.pdf) \]
 * Lecture 4: Introduction to Multiple Linear Regression \[ [S](../assets/lectures/lecture4-mlr-intro/lecture4-mlr-intro.pdf) \|  [A](../assets/lectures/lecture4-mlr-intro/lecture4-mlr-intro-annotated.pdf) \]
 * Lecture 5: Multiple Linear Regression: Least Squares Estimation and Polynomial Regression \[ [S](../assets/lectures/lecture5-mlr-estimation-formulation/lecture5-mlr-estimation-formulation.pdf) \|  [A](../assets/lectures/lecture5-mlr-estimation-formulation/lecture5-mlr-estimation-formulation-annotated.pdf)  \]
 * Lecture 6: Multiple Linear Regression: Categorical Predictors \[ [S](../assets/lectures/lecture6-mlr-categorical/lecture6-mlr-categorical.pdf) \|  [A](../assets/lectures/lecture6-mlr-categorical/lecture6-mlr-categorical-annotated.pdf)  \]
