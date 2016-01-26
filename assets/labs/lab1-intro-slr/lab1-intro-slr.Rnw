@@ -18,7 +18,7 @@ knit_hooks$set(source = function(x, options) {
 
 \subsection*{Cigarettes and carbon monoxide emissions}
 
-An abundance of research has been done to assess the direct health impacts of cigarette smoke. Studies have also investigated the effects that different cigarette brands have on the environment based on their chemical make-ups. While each chemical in cigarettes are considered hazardous to the smoker's health by the United States Surgeon General, in this lab we will be interested in seeing if their is an association between the amount of chemicals and the amount of carbon monoxide emitted into the environment. 
+An abundance of research has been done to assess the direct health impacts of cigarette smoke. Studies have also investigated the effects that different cigarette brands have on the environment based on their chemical make-ups. While each chemical in cigarettes are considered hazardous to the smoker's health by the United States Surgeon General, in this lab we will be interested in seeing if there is an association between the amount of chemicals and the amount of carbon monoxide emitted into the environment. 
 
 \subsection*{The data}
 
