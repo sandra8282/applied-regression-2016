@@ -24,8 +24,9 @@ _Tuesday, week 2_
 _Thursday, week 2_ 
 
  - check ins: when asking a question, post full reproducible example!!!
- - quiz 1
+ - quiz 1: http://bit.ly/1RP6E90
  - lab 1 in class exercise
+ - data viz slides?
  
  <!--
 
