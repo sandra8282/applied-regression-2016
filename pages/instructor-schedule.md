@@ -20,11 +20,12 @@ _Tuesday, week 2_
 
  - check in about: (1) R, (2) whether other courses conflict with the time-slot earlier than this one?, (3) whether they want some courses on data visualization.
  - lecture 3: SLR - least squares and geometry of regression
- - lab 1 in class exercise
  
 _Thursday, week 2_ 
 
+ - check ins: when asking a question, post full reproducible example!!!
  - quiz 1
+ - lab 1 in class exercise
  
  
  Week 3: 
