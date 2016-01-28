@@ -27,7 +27,8 @@ _Thursday, week 2_
  - quiz 1
  - lab 1 in class exercise
  
- 
+ <!--
+
  Week 3: 
  Tuesday: quiz, Lecture 3: SLR - ANOVA , WW
  Thursday: show new reading section on website, Review HW problems 1: simpson's paradox, 2: including inline results in RMarkdown, Lecture 4: MLR intro, MLR lab2
