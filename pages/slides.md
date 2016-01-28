@@ -12,8 +12,8 @@ The source code and PDF files associated with the lectures will be posted below 
 
 * Lecture 1: Introduction to Regression  \[  [S](../assets/lectures/lecture1-intro-regression/lecture1-intro-regression.pdf) \]
 * Lecture 2: Simple Linear Regression and Least Squares \[  [S](../assets/lectures/lecture2-slr-basics/lecture2-slr-basics.pdf) \]
-* Lecture 3: Simple Linear Regression and ANOVA \[ [S](../assets/lectures/lecture3-slr-anova/lecture3-slr-anova.pdf) \| 
-<!--  [A](../assets/lectures/lecture3-slr-anova/lecture3-slr-anova-annotated.pdf) --> \]
+* Lecture 3: Simple Linear Regression and ANOVA \[ [S](../assets/lectures/lecture3-slr-anova/lecture3-slr-anova.pdf) \|  [A](../assets/lectures/lecture3-slr-anova/lecture3-slr-anova-annotated.pdf) \]
+* Special topic: [Data visualization](http://nickreich.github.io/data-stories-2016/assets/lectures/data-viz-ggplot/data-viz-ggplot.html)
 
 <!--
 * Lecture 4: Introduction to Multiple Linear Regression \[ [S](../assets/lectures/lecture4-mlr-intro/lecture4-mlr-intro.pdf) \|  [A](../assets/lectures/lecture4-mlr-intro/lecture4-mlr-intro-annotated.pdf) \]
