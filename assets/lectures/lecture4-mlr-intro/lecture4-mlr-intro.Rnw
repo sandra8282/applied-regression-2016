@@ -1,0 +1,386 @@
+%% beamer/knitr slides 
+%% for Statistical Modeling and Data Visualization course @ UMass
+%% Nicholas Reich: nick [at] schoolph.umass.edu
+
+
+\documentclass[table]{beamer}
+
+
+\input{../../slide-includes/standard-knitr-beamer-preamble}
+
+%        The following variables are assumed by the standard preamble:
+%        Global variable containing module name:
+
+\title{Introduction to Multiple Linear Regression}
+%	Global variable containing module shortname:
+%		(Currently unused, may be used in future.)
+\newcommand{\ModuleShortname}{multRegression}
+%	Global variable containing author name:
+\author{Nicholas G Reich, Jeff Goldsmith}
+%	Global variable containing text of license terms:
+\newcommand{\LicenseText}{Made available under the Creative Commons Attribution-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-sa/3.0/deed.en\textunderscore US }
+%	Instructor: optional, can leave blank.
+%		Recommended format: {Instructor: Jane Doe}
+\newcommand{\Instructor}{}
+%	Course: optional, can leave blank.
+%		Recommended format: {Course: Biostatistics 101}
+\newcommand{\Course}{}
+
+
+\input{../../slide-includes/shortcuts}
+
+\hypersetup{colorlinks,linkcolor=,urlcolor=MainColor}
+
+
+%	******	Document body begins here	**********************
+
+\begin{document}
+
+%	Title page
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+%	******	Everything through the above line must be placed at
+%		the top of any TeX file using the statsTeachR standard
+%		beamer preamble. 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Today's lecture}
+
+\begin{block}{Multiple Linear Regression: basic concepts}
+	\bi
+		\myitem Motivation
+        \myitem Assumptions
+		\myitem Interpretation of $\beta$s
+        \myitem More on confounding (omitted variable bias)
+		\myitem Matrix notation for MLR
+		%\myitem Estimation
+	\ei
+\end{block}
+
+Relevant reading: Faraway Chapter 2, {\em ISL} Chapter 3.2-3.3
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Motivation}
+
+Most applications involve more that one covariate -- if more than one thing can influence an outcome, you need multiple linear regression.
+\bi
+	\myitem Improved description of $y | \bx$
+	\myitem More accurate estimates and predictions
+	\myitem Allow testing of multiple effects
+	\myitem Includes multiple predictor types
+\ei
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Why not bin all predictors?}
+
+\bi
+	\myitem Divide $x_i$ into $k_i$ bins
+	\myitem Stratify data based on inclusion in bins across $x$'s
+	\myitem Find mean of the $y_i$ in each category
+	\myitem Possibly a reasonable non-parametric model
+\ei
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Why not bin all predictors?}
+
+\begin{figure}[t]
+    \includegraphics[width=.8\textwidth]{./Figs/Fig01.pdf}  
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Why not bin all predictors?}
+
+\bi
+	\myitem More predictors = more bins
+	\myitem If each $x$ has 5 bins, you have $5^p$ overall categories
+	\myitem May not have enough data to estimate distribution in each category
+	\myitem Curse of dimensionality is a problem in a lot of non-parametric statistics
+\ei
+
+For more, see this \href{https://prpatil.shinyapps.io/cod_app/}{interactive Shiny app}.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Multiple linear regression model}
+
+\bi
+	\myitem Observe data $(y_i, x_{i1}, \ldots, x_{ip})$ for subjects $1, \ldots, n$. Want to estimate $\beta_0, \beta_1, \ldots, \beta_p$ in the model
+	$$ y_i = \beta_0 + \beta_1x_{i1} + \ldots + \beta_1x_{ip} + \epsilon_i; \mbox{ } \epsilon_i \stackrel{iid}{\sim} (0,\sigma^2)$$
+	\myitem Assumptions (residuals have mean zero, constant variance, are independent) are as in SLR
+	\myitem Impose linearity which (as in the SLR) is a big assumption
+	\myitem Our primary interest will be $E(y | \bx)$
+	\myitem Eventually estimate model parameters using least squares
+\ei
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Predictor types}
+
+\bi
+	\myitem Continuous
+	\myitem Categorical
+	\myitem Ordinal
+\ei
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]{Interpretation of coefficients}
+
+$\beta_0 = E(y | x_1 = 0, \ldots, x = 0)$
+\bi
+	\myitem Centering some of the $x$'s may make this more interpretable
+\ei
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]{Interpretation of $\beta_1$}
+
+\bigskip
+
+\only<2>{$\beta_1 = $ the expected change in $y$ for a one unit increase in $x_1$, holding all other $x$'s constant.}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Example with two predictors}
+
+Suppose we want to regress weight on age and sex.
+\bi
+	\myitem Model is $y_i = \beta_0 + \beta_1 x_{i, age} + \beta_2 x_{i, sex} + \epsilon_i$
+	\myitem Age is continuous starting with age 0; sex is binary, coded so that $x_{i,sex} = 0$ for men and $x_{i,sex} = 1$ for women
+\ei
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]{Example with two predictors}
+
+Model: $y_i = \beta_0 + \beta_1 x_{i, age} + \beta_2 x_{i, sex} + \epsilon_i$
+
+\vspace{1cm}
+
+$\beta_1 = $
+
+\vspace{2.5cm}
+
+$\beta_2 = $
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Example with two predictors}
+
+\begin{figure}[h]
+  \centering
+     \begin{tabular}{cc}
+       \includegraphics[width=.5\textwidth]{./Figs/Fig02.pdf}  &
+       \includegraphics[width=.5\textwidth]{./Figs/Fig03.pdf}  
+     \end{tabular}
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Omitted variable bias}
+
+What happens if the true regression model is
+$$ y_i = \beta_0 + \beta_1 x_{i,1} + \beta_2 x_{i,2} + \epsilon_i$$
+but  we ignore $x_2$ and fit the simple linear regression
+$$ y_i = \beta^{*}_0 + \beta^{*}_1 x_{i,1} + \epsilon^{*}_i$$
+
+Does $\beta^{*}_1 = \beta_{1}$? 
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Omitted variable bias}
+
+\begin{block}{When should you be concerned?}
+If both of the following conditions are met, then  $\beta^{*}_1 = \beta_1$:
+\bi
+    \myitem The omitted variable is unrelated to the outcome
+    \myitem The omitted variable is uncorrelated with the retained variable
+\ei
+\end{block}
+
+Note: A Simpson's paradox can be explained by omitted variable bias.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Matrix notation}
+
+\bi
+        \myitem Observe data $(y_i, x_{i1}, \ldots, x_{ip})$ for subjects $1, \ldots, n$. Want to estimate $\beta_0, \beta_1, \ldots, \beta_p$ in the model
+	$$ y_i = \beta_0 + \beta_1x_{i1} + \ldots + \beta_1x_{ip} + \epsilon_i; \mbox{ } \epsilon_i \stackrel{iid}{\sim} (0,\sigma^2)$$
+	\myitem Notation is cumbersome. To fix this, let
+	\bi
+		\myitem $\bx_i = [1, x_{i1}, \ldots, x_{ip}]$
+		\myitem $\bbeta^{T} = [\beta_0, \beta_1, \ldots, \bbeta_{p}]$
+		\myitem Then $y_i = \bx_i \bbeta + \epsilon_i$
+	\ei
+\ei
+
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Multiple linear regression}
+
+\bi
+        \myitem Let
+	\begin{displaymath}\tiny
+	\by = \left[
+		\begin{array}{c}
+		y_1 \\
+		\vdots \\
+		y_n \\
+		\end{array}
+    		\right],\quad
+	\bX = \left[
+		\begin{array}{cccc}
+		1 & x_{11} & \hdots & x_{1p} \\
+		\vdots & \vdots & x_{ij} & \vdots \\
+		1 & x_{n1} & \hdots & x_{np} \\
+		\end{array}
+		\right], \quad
+	\bbeta = \left[
+		\begin{array}{c}
+		\beta_0 \\
+		\vdots \\
+		\beta_p \\
+		\end{array}
+		\right], \quad
+         \bepsilon = \left[
+		\begin{array}{c}
+		\epsilon_1 \\
+		\vdots \\
+		\epsilon_n \\
+		\end{array}
+		\right]
+	\end{displaymath}
+	\bigskip
+	\myitem Then we can write the model in a more compact form:
+	$${\by}_{n \times 1} = {\bX}_{n \times (p+1)}{\bbeta}_{(p+1) \times 1} + {\bepsilon}_{n \times 1}$$
+	\myitem $\bX$ is called the \emph{design matrix}
+\ei
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Matrix notation}
+
+$$\by = \bX\bbeta + \bepsilon$$
+
+\bi
+	\myitem $\epsilon$ is a random vector rather than a random variable
+	\bigskip
+	\myitem $E(\bepsilon) = 0$ and $Cov(\bepsilon) = \sigma^2I$
+	\bigskip
+	\myitem Note that $Cov$ means the ``variance-covariance matrix''
+\ei
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Mean, variance and covariance of a random vector}
+
+\bi
+	\myitem Let $\by^{T} = [y_1,\ldots,y_n]$ be an $n$-component random vector. Then its mean and variance are defined as
+	\beqa
+		E(\by)^{T} &=& [E(y_1),\ldots,E(y_n)] \\
+		Var(\by) &=& E\left[(\by - E\by)(\by - E\by)^T\right] = E(\by\by^T) - (E\by)(E\by)^T
+    	\eeqa
+	\bigskip
+	\myitem Let $\by$ and $\bz$ be an $n$-component and an $m$-component random vector respectively. Then their covariance is an $n\times m$ matrix defined by
+	\beqa
+		Cov(\by,\bz) = E\big[(\by - E\by)(\bz - \bz)^T\big]
+	\eeqa
+\ei
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Coming up next...}
+
+\begin{block}{Today we covered}
+    \bi
+		\myitem Motivation
+        \myitem Assumptions
+		\myitem Interpretation of $\beta$s
+        \myitem More on confounding (omitted variable bias)
+		\myitem Matrix notation for MLR
+		%\myitem Estimation
+	\ei
+\end{block}
+
+\begin{block}{Next time...}
+\bi
+        \item estimation (more least squares)
+        \item more detailed model diagnostics
+        \item inference
+\ei
+\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}

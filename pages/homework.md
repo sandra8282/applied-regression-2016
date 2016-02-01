@@ -8,15 +8,10 @@ Homework assignments will be posted here, in general organized by due date. Unle
 
 **Collaboration on homework is expected and encouraged, although you must write up your own assignment. No copying or cutting and pasting.**
 
-_Due Tuesday 1/26/2016_
+_Due Tuesday 2/7/2016 _
 
-* Read ISL Chapters 1 and 3.1.
-* Read Faraway Chapters 1 and 2.
-* Read through the syllabus.
-* (5 points) Create a Google Drive folder named "[LastName]-[FirstName]-690NR" (e.g. "Reich-Nick-690NR") and share it with me (nick at umass dot edu). You will use this folder to hand in homework assignments.
-* (10 points) Hand in Problem 8 (part c is optional) from ISL Chapter 3 as a PDF file created using RMarkdown. You may use ggplot2 functions instead of base R graphics. This assignment should be submitted electronically by placing the file in your Google Drive folder created above.
-* (Review) Brush up on creating data analysis reports using RMarkdown. 
-* (Review) If you don't know what ``tidy data'' is, [read about it](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html).
+* Read _ISL_ Chapter 3.2-3.3 and _PR_ Chapter 2.
+* (30 points) Complete [Lab 2](../assets/labs/lab2-intro-mlr/lab2-intro-mlr.pdf). Hand in a PDF and Rmd file via Google Drive. The final PDF file should be no more than 6 pages, including graphs.
 
 _Due Tuesday 2/2/2016, 5pm_ 
 (PDF and Rmd files to be handed in via Google Drive) 
@@ -29,6 +24,18 @@ _Due Tuesday 2/2/2016, 5pm_
   * Choose 4 to 10 key variables from your dataset (including the outcome variable). Include a codebook-style table that lists for each chosen variable the names, definitions, type of variable (i.e. categorical, continuous, binary), and the number of missing observations. Choose at least two of these variables and provide figures that show their univariate distributions. Describe the plotted distributions in words.
   * Run simple linear regressions with two different predictor variables. Interpret the results. Plot a scatterplot of each regression and include the fitted line on the graph. Rescale your predictor variables if necessary to obtain a meaningful interpretation of beta0.
 * (10 points) Using R, create an example of Simpson's paradox using simulated data, where you have a continuous outcome variable, one continuous x variable, and one categorical x variable. It is not necessary to fit regression models to show the paradox, but you should use several graphics to illustrate the slopes, as was shown in the slides for class 1. You should simulate your data using probability distributions with the R functions such as `rnorm()`, `runif()`, `rpois()`, etc... Every time your .Rmd file is re-knit, you should end up with different data, but the story should be the same. 
+
+
+
+_Due Tuesday 1/26/2016_
+
+* Read ISL Chapters 1 and 3.1.
+* Read Faraway Chapters 1 and 2.
+* Read through the syllabus.
+* (5 points) Create a Google Drive folder named "[LastName]-[FirstName]-690NR" (e.g. "Reich-Nick-690NR") and share it with me (nick at umass dot edu). You will use this folder to hand in homework assignments.
+* (10 points) Hand in Problem 8 (part c is optional) from ISL Chapter 3 as a PDF file created using RMarkdown. You may use ggplot2 functions instead of base R graphics. This assignment should be submitted electronically by placing the file in your Google Drive folder created above.
+* (Review) Brush up on creating data analysis reports using RMarkdown. 
+* (Review) If you don't know what ``tidy data'' is, [read about it](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html).
 
 
 
@@ -60,9 +67,6 @@ _Due Tuesday 2/17/2015, 5pm_
 
 * (20 points) Revise and resubmit the report on the dataset that you handed in on 2/3/2015. The new report should include some of the information that you had written previously, should make improvements suggested from the earlier version, and have 1 or 2 additional multiple linear regression models. If appropriate, fit a polynomial term to capture non-linear relationships or use dummy variables to model categorical predictors. Interpret some of the MLR model coefficients in the context of your particular dataset. The report should be less than 6 pages, including all figures, and should be submitted as both PDF and Rmd formats.
 
-_Due Tuesday 2/10/2015, 5pm_ 
-
-* (30 points) Complete [Lab 2](../assets/labs/lab2-intro-mlr.pdf). Hand in a PDF and Rmd file via Google Drive. The final PDF file should be no more than 6 pages, including graphs.
 
 
 

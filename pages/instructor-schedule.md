@@ -28,6 +28,11 @@ _Thursday, week 2_
  - lab 1 in class exercise
  - data viz slides?
  
+ _Tuesday, week 3_
+ 
+  - Lecture 4: MLR intro
+  - Special topic: Data visualization
+ 
  <!--
 
  Week 3: 
