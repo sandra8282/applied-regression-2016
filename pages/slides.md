@@ -17,6 +17,8 @@ The source code and PDF files associated with the lectures will be posted below 
 
 * Special topic: [Data visualization principles](http://nickreich.github.io/data-stories-2016/assets/lectures/data-viz-ggplot/data-viz-ggplot.html)
 * Special topic: [Multivariate data visualization](http://nickreich.github.io/data-stories-2016/assets/lectures/data-viz-NHANES/Presentation-NHANES.html#1)
+
+
 <!--
 
 \|  [A](../assets/lectures/lecture4-mlr-intro/lecture4-mlr-intro-annotated.pdf)
