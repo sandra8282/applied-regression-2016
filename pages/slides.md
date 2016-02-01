@@ -16,6 +16,7 @@ The source code and PDF files associated with the lectures will be posted below 
 * Lecture 4: Introduction to Multiple Linear Regression \[ [S](../assets/lectures/lecture4-mlr-intro/lecture4-mlr-intro.pdf)  \]
 
 * Special topic: [Data visualization principles](http://nickreich.github.io/data-stories-2016/assets/lectures/data-viz-ggplot/data-viz-ggplot.html)
+* Special topic: [Data visualization using ggplot2](http://nickreich.github.io/data-stories-2016/assets/lectures/data-viz-ggplot/data-viz-ggplot.html#1)
 * Special topic: [Multivariate data visualization](http://nickreich.github.io/data-stories-2016/assets/lectures/data-viz-NHANES/Presentation-NHANES.html#1)
 
 
