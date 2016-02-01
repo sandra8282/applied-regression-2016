@@ -25,8 +25,6 @@ _Due Tuesday 2/2/2016, 5pm_
   * Run simple linear regressions with two different predictor variables. Interpret the results. Plot a scatterplot of each regression and include the fitted line on the graph. Rescale your predictor variables if necessary to obtain a meaningful interpretation of beta0.
 * (10 points) Using R, create an example of Simpson's paradox using simulated data, where you have a continuous outcome variable, one continuous x variable, and one categorical x variable. It is not necessary to fit regression models to show the paradox, but you should use several graphics to illustrate the slopes, as was shown in the slides for class 1. You should simulate your data using probability distributions with the R functions such as `rnorm()`, `runif()`, `rpois()`, etc... Every time your .Rmd file is re-knit, you should end up with different data, but the story should be the same. 
 
-
-
 _Due Tuesday 1/26/2016_
 
 * Read ISL Chapters 1 and 3.1.
@@ -40,8 +38,6 @@ _Due Tuesday 1/26/2016_
 
 
 <!--
-* (5 points for completing the test) Take [CAOS test](https://apps3.cehd.umn.edu/artist/user/scale_select.html) (Access code provided on Piazza)
-
 _Due Wednesday 4/8/2015, 5pm_ 
 
 * (30 pts) [Lab 5](../assets/labs/lab5-amelia-missing-data.pdf).
